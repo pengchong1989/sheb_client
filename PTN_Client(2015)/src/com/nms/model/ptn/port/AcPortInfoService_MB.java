@@ -672,4 +672,15 @@ public class AcPortInfoService_MB extends ObjectService_Mybatis{
 		}
 		return acPortInfoList;
 	}
+	
+	public List<AcPortInfo> selectBySiteIdAndBuffer(AcPortInfo acInfo) throws Exception {
+		List<AcPortInfo> acPortInfoList = null;
+		try {
+			acPortInfoList = this.mapper.queryByCondition(acInfo);
+			this.getAcBuffer(acPortInfoList);
+		} catch (Exception e) {
+			throw e;
+		}
+		return acPortInfoList;
+	}
 }

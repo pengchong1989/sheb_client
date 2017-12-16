@@ -1492,14 +1492,14 @@ public class TunnelAction {
 			for (QosInfo qos : qosList) {
 
 				if (Integer.parseInt(qos.getDirection()) == EQosDirection.FORWARD.getValue()) {
-					if (qosPreMap.get(qos) != null) {
+					if (qosPreMap.get(qos.getCos()) != null) {
 						if (qosPreMap.get(qos.getCos()) < qos.getCir()) {
 							return true;
 						}
 					}
 				}
 				if (Integer.parseInt(qos.getDirection()) == EQosDirection.BACKWARD.getValue()) {
-					if (qosNextMap.get(qos) != null) {
+					if (qosNextMap.get(qos.getCos()) != null) {
 						if (qosNextMap.get(qos.getCos()) < qos.getCir()) {
 							return true;
 						}
@@ -1542,14 +1542,14 @@ public class TunnelAction {
 			}
 			for (QosInfo qos : qosList) {
 				if (Integer.parseInt(qos.getDirection()) == EQosDirection.FORWARD.getValue()) {
-					if (qosPreMap.get(qos) != null) {
+					if (qosPreMap.get(qos.getCos()) != null) {
 						if (qosPreMap.get(qos.getCos()) < qos.getCir()) {
 							return true;
 						}
 					}
 				}
 				if (Integer.parseInt(qos.getDirection()) == EQosDirection.BACKWARD.getValue()) {
-					if (qosNextMap.get(qos) != null) {
+					if (qosNextMap.get(qos.getCos()) != null) {
 						if (qosNextMap.get(qos.getCos()) < qos.getCir()) {
 							return true;
 						}

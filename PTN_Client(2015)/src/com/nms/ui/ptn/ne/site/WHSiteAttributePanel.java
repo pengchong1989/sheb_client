@@ -99,7 +99,7 @@ public class WHSiteAttributePanel extends JPanel {
 				}else if("ETN-5000".equals(siteInst.getCellType())){
 					siteInst.setVersions("V3.2.5");
 					siteInst.setHardEdition("EB5000.003V01");
-					this.bootTimeJTextField.setText("V3.2.5");
+					this.bootTimeJTextField.setText("V2.0.1");
 				}
 				
 			this.txtDescribe.setText(siteInst.getSite_Hum_Id());
@@ -197,7 +197,7 @@ public class WHSiteAttributePanel extends JPanel {
 		this.contentPanel.setLayout(layout);
 		GridBagConstraints c = new GridBagConstraints();
 
-		/** 第一�?网元描述 */
+		/** 第一�?网元描述 */
 		c.gridx = 0;
 		c.gridy = 1;
 		c.gridheight = 1;
@@ -217,7 +217,7 @@ public class WHSiteAttributePanel extends JPanel {
 		layout.setConstraints(this.txtDescribe, c);
 		this.contentPanel.add(this.txtDescribe);
 
-		/** 第二�?盘号 */
+		/** 第二�?盘号 */
 		c.gridx = 0;
 		c.gridy = 2;
 		c.gridheight = 1;
@@ -237,7 +237,7 @@ public class WHSiteAttributePanel extends JPanel {
 //		layout.setConstraints(this.plateJTextField, c);
 //		this.contentPanel.add(this.plateJTextField);
 
-		/** 第三�?软件版本 */
+		/** 第三�?软件版本 */
 		c.gridx = 0;
 		c.gridy = 2;
 		c.gridheight = 1;
@@ -257,7 +257,7 @@ public class WHSiteAttributePanel extends JPanel {
 		layout.setConstraints(this.softWareText, c);
 		this.contentPanel.add(this.softWareText);
 
-		/** 第四�?卡号 */
+		/** 第四�?卡号 */
 		c.gridx = 0;
 		c.gridy = 3;
 		c.gridheight = 1;
@@ -277,7 +277,7 @@ public class WHSiteAttributePanel extends JPanel {
 		layout.setConstraints(this.cardJTextField, c);
 		this.contentPanel.add(this.cardJTextField);
 
-		/** 第五�?制盘时间 */
+		/** 第五�?制盘时间 */
 		c.gridx = 0;
 		c.gridy = 5;
 		c.gridheight = 1;
@@ -297,7 +297,7 @@ public class WHSiteAttributePanel extends JPanel {
 //		layout.setConstraints(this.createJTextField, c);
 //		this.contentPanel.add(this.createJTextField);
 
-		/** 第六�?编程时间 */
+		/** 第六�?编程时间 */
 		c.gridx = 0;
 		c.gridy = 6;
 		c.gridheight = 1;
@@ -318,7 +318,7 @@ public class WHSiteAttributePanel extends JPanel {
 //		this.contentPanel.add(this.programmeTimeField);
 
 
-		/** 第七�?网元时间服务�?*/
+		/** 第七�?网元时间服务�?*/
 		c.gridx = 0;
 		c.gridy = 7;
 		c.gridheight = 1;
@@ -338,7 +338,7 @@ public class WHSiteAttributePanel extends JPanel {
 //		layout.setConstraints(this.totalTimetext, c);
 //		this.contentPanel.add(this.totalTimetext);
 		
-		/** 第八�?网元时间 */
+		/** 第八�?网元时间 */
 		c.gridx = 0;
 		c.gridy = 4;
 		c.gridheight = 1;
@@ -358,7 +358,7 @@ public class WHSiteAttributePanel extends JPanel {
 		layout.setConstraints(this.siteTimeTextField, c);
 		this.contentPanel.add(this.siteTimeTextField);
 		
-		/** 第九�?BOOT时间 */
+		/** 第九�?BOOT时间 */
 		c.gridx = 0;
 		c.gridy = 5;
 		c.gridheight = 1;
@@ -378,7 +378,7 @@ public class WHSiteAttributePanel extends JPanel {
 		layout.setConstraints(this.bootTimeJTextField, c);
 		this.contentPanel.add(this.bootTimeJTextField);
 			
-		/** 第十�?网元MAC地址 */
+		/** 第十�?网元MAC地址 */
 //		c.gridx = 0;
 //		c.gridy = 10;
 //		c.gridheight = 1;
@@ -400,7 +400,7 @@ public class WHSiteAttributePanel extends JPanel {
 
 		
 		
-		/** 第十�?网元时间 */
+		/** 第十�?网元时间 */
 //		c.gridx = 0;
 //		c.gridy = 10;
 //		c.gridheight = 1;
@@ -423,7 +423,7 @@ public class WHSiteAttributePanel extends JPanel {
 		
 		
 		
-		/** 第十一�?按钮 */
+		/** 第十一�?按钮 */
 		c.gridx = 2;
 		c.gridy = 6;
 		c.gridheight = 1;

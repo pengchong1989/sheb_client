@@ -697,7 +697,7 @@ public class AddElineDialog extends PtnDialog {
 				acPortInfo = new AcPortInfo();
 				acPortInfo.setSiteId(pwInfo.getASiteId());
 				acPortInfo.setAcStatus(EActiveStatus.ACTIVITY.getValue());
-				acList = acInfoServiceMB.selectBySiteIdOnly(acPortInfo);
+				acList = acInfoServiceMB.selectBySiteIdAndBuffer(acPortInfo);
 				for (AcPortInfo ac : acList) {
 					if (ac.getIsUser() == 0) {
 						aAcModel.addElement(new ControlKeyValue(ac.getId() + "", ac.getName(), ac));
@@ -712,7 +712,7 @@ public class AddElineDialog extends PtnDialog {
 				acPortInfo = new AcPortInfo();
 				acPortInfo.setSiteId(pwInfo.getZSiteId());
 				acPortInfo.setAcStatus(EActiveStatus.ACTIVITY.getValue());
-				acList = acInfoServiceMB.selectBySiteIdOnly(acPortInfo);
+				acList = acInfoServiceMB.selectBySiteIdAndBuffer(acPortInfo);
 				for (AcPortInfo ac : acList) {
 					if (ac.getIsUser() == 0) {
 						zAcModel.addElement(new ControlKeyValue(ac.getId() + "", ac.getName(), ac));

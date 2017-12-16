@@ -543,6 +543,7 @@ public class QosInfoService_MB extends ObjectService_Mybatis{
 		int result=0;
 		try {
 			result=acPortInfo.getSimpleQos().getCir();
+			result+=acPortInfo.getBufferList().get(0).getCir();
 		} catch (Exception e) {
 			ExceptionManage.dispose(e, this.getClass());
 		}

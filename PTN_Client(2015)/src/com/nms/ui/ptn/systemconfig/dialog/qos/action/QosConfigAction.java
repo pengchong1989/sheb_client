@@ -461,9 +461,9 @@ public class QosConfigAction {
 			//验证qos带宽是否充足
 			if (!this.checkingUpdateQos(qosInfoList, obj)) {
 				if (EServiceType.TUNNEL.toString().equals(objType)) {
-					DialogBoxUtil.errorDialog(null, ResourceUtil.srcStr(StringKeysTip.TIP_PORT_QOS_ALARM));
+					DialogBoxUtil.errorDialog(null, ResourceUtil.srcStr(StringKeysTip.TIP_QOSISNOTENOUGH));
 				}else if(EServiceType.PW.toString().equals(objType)){
-					DialogBoxUtil.errorDialog(null, ResourceUtil.srcStr(StringKeysTip.TIP_TUNNEL_QOS_ALARM));
+					DialogBoxUtil.errorDialog(null, ResourceUtil.srcStr(StringKeysTip.TIP_QOSISNOTENOUGH));
 				}else{
 					DialogBoxUtil.errorDialog(null, ResourceUtil.srcStr(StringKeysTip.TIP_QOSISNOTENOUGH));
 				}
