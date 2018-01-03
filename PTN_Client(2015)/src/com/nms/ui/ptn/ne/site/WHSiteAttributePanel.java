@@ -99,7 +99,7 @@ public class WHSiteAttributePanel extends JPanel {
 				}else if("ETN-5000".equals(siteInst.getCellType())){
 					siteInst.setVersions("V3.2.5");
 					siteInst.setHardEdition("EB5000.003V01");
-					this.bootTimeJTextField.setText("V2.0.1");
+					this.bootTimeJTextField.setText("V2.01");
 				}
 				
 			this.txtDescribe.setText(siteInst.getSite_Hum_Id());
